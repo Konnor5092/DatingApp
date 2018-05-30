@@ -22,6 +22,7 @@ namespace DatingApp.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
+            //This is a change to the values controller
             var values = await _context.Values.ToListAsync();
 
             return Ok(values);
